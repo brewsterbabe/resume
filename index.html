@@ -1,119 +1,286 @@
-<!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Margaret C Brewster</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<title>Margaret Brewster</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
 
-		<!-- Wrapper-->
-			<div id="wrapper">
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#work" class="icon fa-laptop"><span>Web-Dev</span></a>
-						<a href="#Robotics" class="icon fa-gamepad"><span>Robotics</span></a>
-						<a href="Resume Margaret Brewster.pdf" class="icon fa-wpforms"><span>Resume</span></a>
-						<a href="https://www.linkedin.com/in/margaret-brewster-20098b149/" class="icon fa-linkedin"><span>Linkedin</span></a>
-					</nav>
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url(images/e5.jpg);
+    min-height: 100%;
+}
 
-				<!-- Main -->
-					<div id="main">
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url(images/grey.jpg);
+    min-height: 400px;
+}
 
-						<!-- Me -->
-							<article id="me" class="panel">
-								<header>
-									<h1>Margaret C Brewster</h1>
-									<p>Engineering Student, Developer,<br> Roboticist, Curious Mind </p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon fa-chevron-right"><span>Check out what I've done</span></span>
-									<img src="images/profile.PNG" alt="" />
-								</a>
-							</article>
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/wood.jpg");
+    min-height: 400px;
+}
 
-						<!-- Work -->
-							<article id="work" class="panel">
-								<header>
-									<h2>Web development</h2>
-								</header>
-								<p>
-									 As a web developer I focus on creating sleek and intuitive design with safe and effective functionality. Web development is a creative outlet for me where I can exercise my love for user experience, design an the technical aspects behind it. 
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
-									<br><br>My most current project is working of the shaw.ca chat app using react and redux to creat a quick and resposive user experience.
-								</p>
-								<section>
-									<div class="row">
-										<div class="4u 12u$(mobile)">
-											<a href="https://www.shaw.ca/store/" class="image fit"><img src="images/shaw.PNG"></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="http://newsroom.shaw.ca/" class="image fit"><img src="images/newsroom.PNG" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="http://awiretech.com/" class="image fit"><img src="images/awire.PNG" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="http://rubixinvestments.ca/" class="image fit"><img src="images/investments.PNG" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="http://playitlive.in/" class="image fit"><img src="images/play.PNG" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="http://varsitycommunityassociation.ca/en/" class="image fit"><img src="images/community.PNG" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="http://www.varsitycommunitygarden.ca/" class="image fit"><img src="images/garden.PNG" alt=""></a>
-										</div>
-										<div class="4u 12u$(mobile)">
-											<a href="http://schools.cbe.ab.ca/b829/aberhart/index.htm" class="image fit"><img src="images/abe.PNG" alt=""></a>
-										</div>
-										<div class="4u$ 12u$(mobile)">
-											<a href="https://aberobotics.github.io/AbeRoboticsWebsite/" class="image fit"><img src="images/robots.PNG" alt=""></a>
-										</div>
-									</div>
-								</section>
-							</article>
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
 
-						<!-- Robotics -->
-							<article id="Robotics" class="panel">
-								<header>
-									<h2>Robotics</h2>
-								</header>
-								<p>
-									 I learned how to build robots with team 5630 and then when on to found and become team lead of the Aberhart robotics republic. Currently I am a mentor for 4334 robotics. 
-								</p>
-								<section>
-								
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/I7vJ8tyvIvY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/jtaqB6ZAjz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											<iframe width="560" height="315" src="https://www.youtube.com/embed/aWpSX5VQavk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-									
-								
-								</section>
-							</article>	
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Margaret <span class="w3-hide-small"></span> Brewster</span>
+  </div>
+</div>
 
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love design</em></p>
+  <p>Hi, I’m Margaret Brewster. I am Currently pursuing my undergraduate degree in Systems Design Engineering at the University of Waterloo. I am Passionate about the holistic process of Design. I love to plan, I love to build and be able to give a user what they actually asked for. Web design is something I am passionate about because websites are how we convey information in the modern world and connect the world. Your website represents your company, and through design we can ensure all users understand and can gain access to what they need. Web design is about more than making things look nice its defines the accessibility of information to people all over the world and the challenge of making inutive and accessible UIs drives me to keep coding and keep creating. 
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Margaret Brewster</b></p><br>
+      <a href="https://www.linkedin.com/in/margaret-brewster-20098b149/"><img src="images/profile.PNG" class="w3-round w3-image w3-hover-opacity" alt="Margaret Brewster" width="350" height="350"></a>
+    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/skel-viewport.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>My last few jobs have all been in the front end development space, I have built websites, upgraded W3C accessibility and managed code releases. I am looking to build on these skills and explore new tools in the development space as well as take on more responsibility in the agile environment. I have recently completed scrum master training and am looking to put those skills to use.
+      </p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">My Skills:</p>
+  <p class="w3-wide"><i class="fab fa-html5"></i>Html</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fab fa-css3"></i>Css</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fab fa-js"></i>javascript</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>C++</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fab fa-java"></i>Java</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+  <p class="w3-wide"><i class="fas fa-code-branch"></i>Agile Methodologies</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+</div>
 
-	</body>
-</html>
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">4</span><br>
+    Businesses
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">30+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">5+</span><br>
+    Languages 
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">12+</span><br>
+    Frameworks
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <a URL="https://www.shaw.ca/store/"><img src="images/shaw.PNG" style="width:100%" onclick="onClick(this)" href="https://www.shaw.ca/store/" class="w3-hover-opacity" alt="During my time as a front end developer on the Digital Sustainment team. Contributions I made to the site include. The creation of a mobile responsive menu, functionality of the channel listings widget and the redesign of the Vaisakhi offers page. "></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="http://newsroom.shaw.ca/"><img src="images/newsroom.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="One project I was resposible for at Shaw was the upgrade of W3C accesaibilty for the newsroom site. Using the Site improve accessibilty checker I was in charge of the upgrade of the site to A level stanards. These standards allow for the proper functionality of screen readers, improved contrast and correct functionality in poor Wifi coverage."></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="https://aberobotics.github.io/AbeRoboticsWebsite/"><img src="images/robots.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="As Web lead for the William Aberhart robotics team, I created a website to house team information, recruit students and attract sponsors. After leaving the team in 2017, I transitioned from web lead to mentor. In this role I continue to support the evultution of the site as it evolves with the team."></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="http://varsitycommunityassociation.ca/en/"><img src="images/community.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="In order to allow the legacy staff of the city of calgary to holistically manage their online presence I created a custom template for the VCA. This template is editable via word press allowing for the use of the inutitive wordpress GUI for easy editabiltiy."></a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a URL="http://www.varsitycommunitygarden.ca/"><img src="images/garden.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Along with the main VCA website template, I also created a template for the Varsity Community Garden Association. This template was made to be editable with word press allowing for changes to be made by staff with no front end experience.  "></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="http://schools.cbe.ab.ca/b829/aberhart/index.htm"><img src="images/abe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="As a high school side project I was lead of the school web dev team. As a unit we were responsilbe for the updating of the William Aberhart website. During this project we were subject to the restraint of the standar CBE web template, and had to ensure all changes were congruint to this standard format. "></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="http://awiretech.com/"><img src="images/awire.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Awire was one of the websites we managed at Grey Adv, a web start up I worked for in late 2016. We were responsible for the up keep and customization of world class sites for small businesses.  "></a>
+    </div>
+
+    <div class="w3-col m3">
+      <a URL="http://playitlive.in/"><img src="images/play.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Play was one of the websites we managed at Grey Adv, a web start up I worked for in late 2016. We were responsible for the up keep and customization of world class sites for small businesses."></a>
+    </div>
+    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+    <a><button id="linkURL" >See the site</button></a>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64 " id="contact">
+  <h3 class="w3-center">Get In Touch</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section w3-center">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kitchener, Waterloo<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +587 968 4963<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mcbrewst@edu.uwaterloo.ca<br>
+
+      </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-hover-opacity-on">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i href="https://github.com/mcbrewster/" class="fab fa-github fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>  
+    <i href="https://www.linkedin.com/in/margaret-brewster-20098b149/" class="fab fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 
+  </div>
+</footer>
+ 
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  linkText = document.getElementById("linkURL");
+  linkText.parentNode.setAttribute("href", element.parentNode.getAttribute("URL"));
+  console.log(element.parentNode.getAttribute("URL"));
+  console.log(linkText);
+
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html> 
